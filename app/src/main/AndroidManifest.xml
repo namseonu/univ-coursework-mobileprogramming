@@ -18,6 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- course list -->
+        <activity android:name=".Course01Activity" />
+        <activity android:name=".Course02Activity" />
+        <activity android:name=".Course03Activity" />
+
+        <!-- course 02 -->
+        <activity android:name=".course02.UnderstandingFirstAppActivity" />
+
+        <!-- course 03 -->
+        <activity android:name=".course03.Example1bActivity" />
+        <activity android:name=".course03.Example1cActivity" />
+        <activity android:name=".course03.Example2aActivity" />
     </application>
 
 </manifest>

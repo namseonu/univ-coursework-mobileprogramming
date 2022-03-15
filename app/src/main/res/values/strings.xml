@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">MobileProgramming</string>
+    <string name="app_name">202035328 남선우</string>
+    <string name="mobile_programming">Mobile Progamming</string>
+    <string name="hello_android">안녕 안드로이드!</string>
 </resources>
