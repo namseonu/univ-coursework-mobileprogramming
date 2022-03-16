@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mobileprogramming.R;
 
-public class Example2aActivity extends AppCompatActivity {
+public class LinearLayoutExample1cActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_example_2a);
+        setContentView(R.layout.activity_linear_layout_example_1c);
     }
 }

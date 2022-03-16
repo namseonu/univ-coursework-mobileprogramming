@@ -7,12 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mobileprogramming.R;
 
-public class LinearLayoutGravityActivity extends AppCompatActivity {
+public class ScrollViewExample1Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linear_layout_gravity);
+        setContentView(R.layout.activity_scroll_view_example_1);
     }
 
     @Override

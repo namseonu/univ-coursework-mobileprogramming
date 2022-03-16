@@ -2,4 +2,10 @@
     <string name="app_name">202035328 남선우</string>
     <string name="mobile_programming">Mobile Progamming</string>
     <string name="hello_android">안녕 안드로이드!</string>
+
+    <!-- course -->
+    <string name="course_01">01. Introduction</string>
+    <string name="course_02">02. Android Making First App</string>
+    <string name="course_03">03. Views and Layouts</string>
+    <string name="course_04">04. Application Basics</string>
 </resources>

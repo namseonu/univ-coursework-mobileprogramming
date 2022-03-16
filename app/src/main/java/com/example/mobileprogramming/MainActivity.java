@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.mobileprogramming.course03.Example1cActivity;
+import com.example.mobileprogramming.adapter.MainRecyclerViewAdapter;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private final ArrayList<String> mWeekList = new ArrayList<String>();
+    private final ArrayList<String> courseList = new ArrayList<>();
     private final String tag = "ACT/MAIN";
 
     @Override
@@ -21,20 +21,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initWeekList();
+        initCourseList();
         initRecyclerView();
     }
 
-    private void initWeekList() {
-        mWeekList.add("01. Introduction");
-        mWeekList.add("02. Android Making First App");
-        mWeekList.add("03. Views and Layouts");
+    private void initCourseList() {
+        courseList.add("01. Introduction");
+        courseList.add("02. Android Making First App");
+        courseList.add("03. Views and Layouts");
     }
 
     private void initRecyclerView() {
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.main_week_recycler_view);
         MainRecyclerViewAdapter mRecyclerViewAdpater = new MainRecyclerViewAdapter();
-        mRecyclerViewAdpater.setmWeekList(mWeekList);
+        mRecyclerViewAdpater.setCourseList(courseList);
 
         // initialize click listener
         mRecyclerViewAdpater.setOnItemClickListener(new MainRecyclerViewAdapter.onItemClickListener() {

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+    <!-- stretchColumns: 늘릴 수 있는 열들의 번호 지정 (0, 1, 2, ..., *) -->
+
+</TableLayout>

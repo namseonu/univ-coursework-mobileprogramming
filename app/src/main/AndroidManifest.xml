@@ -23,14 +23,24 @@
         <activity android:name=".Course01Activity" />
         <activity android:name=".Course02Activity" />
         <activity android:name=".Course03Activity" />
+        <activity android:name=".Course04Activity" />
 
         <!-- course 02 -->
         <activity android:name=".course02.UnderstandingFirstAppActivity" />
 
         <!-- course 03 -->
-        <activity android:name=".course03.Example1bActivity" />
-        <activity android:name=".course03.Example1cActivity" />
-        <activity android:name=".course03.Example2aActivity" />
+        <activity android:name=".course03.LinearLayoutExample1bActivity" />
+        <activity android:name=".course03.LinearLayoutExample1cActivity" />
+        <activity android:name=".course03.LinearLayoutExample2aActivity" />
+        <activity android:name=".course03.LinearLayoutWeightActivity" />
+        <activity android:name=".course03.LinearLayoutGravityActivity" />
+        <activity android:name=".course03.RelativeLayoutExampleActivity" />
+        <activity android:name=".course03.FrameLayoutExampleActivity" />
+        <activity android:name=".course03.TableLayoutExample1Activity" />
+        <activity android:name=".course03.TableLayoutExample2Activity" />
+        <activity android:name=".course03.TableLayoutExample3Activity" />
+        <activity android:name=".course03.ScrollViewExample1Activity" />
+        <activity android:name=".course03.ScrollViewExample2Activity" />
     </application>
 
 </manifest>
