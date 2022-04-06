@@ -13,8 +13,8 @@ import com.example.mobileprogramming.adapter.MainRecyclerViewAdapter;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private final ArrayList<String> courseList = new ArrayList<>();
     private final String tag = "ACT/MAIN";
+    private final ArrayList<String> courseList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         courseList.add("01. Introduction");
         courseList.add("02. Android Making First App");
         courseList.add("03. Views and Layouts");
+        courseList.add("04. Application Basics Lifecycle Activty Intents");
     }
 
     private void initRecyclerView() {

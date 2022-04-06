@@ -46,58 +46,7 @@ public class Course04Activity extends AppCompatActivity {
         CourseRecyclerViewAdapter mRecyclerViewAdpater = new CourseRecyclerViewAdapter();
         mRecyclerViewAdpater.setCourseContentList(courseContentList);
 
-        // initialize click listener
-        mRecyclerViewAdpater.setOnItemClickListener(new CourseRecyclerViewAdapter.onItemClickListener() {
-            @Override
-            public void onItemClick(View itemView, int itemPosition) {
-                Intent intent = null;
 
-                switch(itemPosition) {
-                    case 0: // LinearLayout - Example 1b
-                        intent = new Intent(itemView.getContext(), LinearLayoutExample1bActivity.class);
-                        break;
-                    case 1: // LinearLayout - Example 1c
-                        intent = new Intent(itemView.getContext(), LinearLayoutExample1cActivity.class);
-                        break;
-                    case 2: // LinearLayout - Example 2a (Fill Mode)
-                        intent = new Intent(itemView.getContext(), LinearLayoutExample2aActivity.class);
-                        break;
-                    case 3: // LinearLayout - Weight
-                        intent = new Intent(itemView.getContext(), LinearLayoutWeightActivity.class);
-                        break;
-                    case 4: // LinearLayout - Gravity
-                        intent = new Intent(itemView.getContext(), LinearLayoutGravityActivity.class);
-                        break;
-                    case 5: // RelativeLayout - Example
-                        intent = new Intent(itemView.getContext(), RelativeLayoutExampleActivity.class);
-                        break;
-                    case 6: // FrameLayout - Example
-                        intent = new Intent(itemView.getContext(), FrameLayoutExampleActivity.class);
-                        break;
-                    case 7: // TableLayout - Example 1
-                        intent = new Intent(itemView.getContext(), TableLayoutExample1Activity.class);
-                        break;
-                    case 8: // TableLayout - Example 2
-                        intent = new Intent(itemView.getContext(), TableLayoutExample2Activity.class);
-                        break;
-                    case 9:    // TableLayout - Example 3
-                        intent = new Intent(itemView.getContext(), TableLayoutExample3Activity.class);
-                        break;
-                    case 10:    // ScrollView - Example 1
-                        intent = new Intent(itemView.getContext(), ScrollViewExample1Activity.class);
-                        break;
-                    case 11:    // ScrollView - Example 2
-                        intent = new Intent(itemView.getContext(), ScrollViewExample2Activity.class);
-                        break;
-                    default:
-                        Log.d(tag, "switch(itemPosition)/default");
-                        break;
-                }
-
-                // 액티비티 전환
-                if(intent != null) startActivity(intent);
-            }
-        });
 
         mRecyclerView.setAdapter(mRecyclerViewAdpater);
     }
