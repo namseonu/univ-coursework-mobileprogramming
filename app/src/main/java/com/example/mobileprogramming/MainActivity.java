@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         courseList.add("02. Android Making First App");
         courseList.add("03. Views and Layouts");
         courseList.add("04. Application Basics Lifecycle Activty Intents");
+        courseList.add("05. Widgets & Event");
+        courseList.add("06. Graphics & Animation");
     }
 
     private void initRecyclerView() {
@@ -53,8 +55,17 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         intent = new Intent(itemView.getContext(), Course03Activity.class);
                         break;
+                    case 3:
+                        intent = new Intent(itemView.getContext(), Course04Activity.class);
+                        break;
+                    case 4:
+                        intent = new Intent(itemView.getContext(), Course05Activity.class);
+                        break;
+                    case 5:
+                        intent = new Intent(itemView.getContext(), Course06Activity.class);
+                        break;
                     default:
-                        Log.d(tag, "switch(itemPosition)/default");
+                        Log.d(tag, "switch/default");
                         break;
                 }
 

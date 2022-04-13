@@ -53,7 +53,7 @@ public class Course03Activity extends AppCompatActivity {
             public void onItemClick(View itemView, int itemPosition) {
                 Intent intent = null;
 
-                switch(itemPosition) {
+                switch (itemPosition) {
                     case 0: // LinearLayout - Example 1b
                         intent = new Intent(itemView.getContext(), LinearLayoutExample1bActivity.class);
                         break;
@@ -91,12 +91,12 @@ public class Course03Activity extends AppCompatActivity {
                         intent = new Intent(itemView.getContext(), ScrollViewExample2Activity.class);
                         break;
                     default:
-                        Log.d(tag, "switch(itemPosition)/default");
+                        Log.d(tag, "switch/default");
                         break;
                 }
 
                 // 액티비티 전환
-                if(intent != null) startActivity(intent);
+                if (intent != null) startActivity(intent);
             }
         });
 

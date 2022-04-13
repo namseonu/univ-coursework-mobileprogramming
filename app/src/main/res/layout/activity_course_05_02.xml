@@ -6,31 +6,31 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/course_04_subtitle_tv"
+        android:id="@+id/course_05_02_subtitle_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/mobile_programming"
+        android:text="@string/course_05"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/course_04_title_tv"
+        app:layout_constraintBottom_toTopOf="@+id/course_05_02_title_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/course_04_title_tv"
+        android:id="@+id/course_05_02_title_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/course_04"
+        android:text="@string/course_05_02"
         android:textColor="@color/black"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/course_04_subtitle_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/course_05_02_subtitle_tv" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/course_04_recycler_view"
+        android:id="@+id/course_05_02_recycler_view"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
@@ -41,7 +41,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/course_04_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/course_05_02_title_tv"
         tools:listitem="@layout/item_course_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">학번 이름</string>
+    <string name="app_name">202035328 남선우</string>
     <string name="mobile_programming">Mobile Progamming</string>
     <string name="hello_android">안녕 안드로이드!</string>
 
@@ -8,4 +8,8 @@
     <string name="course_02">02. Android Making First App</string>
     <string name="course_03">03. Views and Layouts</string>
     <string name="course_04">04. Application Basics</string>
+    <string name="course_05">05. Widgets and Event</string>
+    <string name="course_05_01">05–1. Basic</string>
+    <string name="course_05_02">05–2. Advanced</string>
+    <string name="course_06">06. Graphics and Animation</string>
 </resources>

@@ -24,6 +24,8 @@
         <activity android:name=".Course02Activity" />
         <activity android:name=".Course03Activity" />
         <activity android:name=".Course04Activity" />
+        <activity android:name=".Course05Activity" />
+        <activity android:name=".Course06Activity" />
 
         <!-- course 02 -->
         <activity android:name=".course02.UnderstandingFirstAppActivity" />
@@ -41,6 +43,17 @@
         <activity android:name=".course03.TableLayoutExample3Activity" />
         <activity android:name=".course03.ScrollViewExample1Activity" />
         <activity android:name=".course03.ScrollViewExample2Activity" />
+
+        <!-- course 04 -->
+
+        <!-- course 05 -->
+        <activity android:name=".course05.Part01Activity" />
+        <activity android:name=".course05.Part02Activity" />
+        <activity android:name=".course05.part02.Fragment01Activity" />
+        <activity android:name=".course05.part02.Fragment02Activity" />
+
+        <!-- course 06 -->
+
     </application>
 
 </manifest>

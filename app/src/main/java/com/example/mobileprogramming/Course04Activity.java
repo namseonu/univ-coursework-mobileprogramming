@@ -47,7 +47,6 @@ public class Course04Activity extends AppCompatActivity {
         mRecyclerViewAdpater.setCourseContentList(courseContentList);
 
 
-
         mRecyclerView.setAdapter(mRecyclerViewAdpater);
     }
 
