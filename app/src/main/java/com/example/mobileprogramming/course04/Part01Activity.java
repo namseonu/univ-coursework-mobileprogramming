@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobileprogramming.R;
 import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
+import com.example.mobileprogramming.course04.part01.ExplicitIntentMainActivity;
 import com.example.mobileprogramming.course04.part01.IntentActivity;
+import com.example.mobileprogramming.course04.part01.ToastMainActivity;
 import com.example.mobileprogramming.course04.part01.UnderstandingLayoutInflationActivity;
 
 import java.util.ArrayList;
@@ -32,6 +34,8 @@ public class Part01Activity extends AppCompatActivity {
     private void initCourseContentList() {
         courseContentList.add("Understanding Layout Inflation");
         courseContentList.add("Intent");
+        courseContentList.add("Explicit Intent");
+        courseContentList.add("Toast");
     }
 
     private void initRecyclerView() {
@@ -51,6 +55,12 @@ public class Part01Activity extends AppCompatActivity {
                         break;
                     case 1: // Intent - Exercise (p. 22~25)
                         intent = new Intent(itemView.getContext(), IntentActivity.class);
+                        break;
+                    case 2: // Explicit Intent - Exercises (p. 41~48)
+                        intent = new Intent(itemView.getContext(), ExplicitIntentMainActivity.class);
+                        break;
+                    case 3: // Toast - Exercise (p. 53~55, startActivityForResult, onActivityResult)
+                        intent = new Intent(itemView.getContext(), ToastMainActivity.class);
                         break;
                     default:
                         Log.d(tag, "switch/default");

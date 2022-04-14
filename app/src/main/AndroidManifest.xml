@@ -49,6 +49,10 @@
         <activity android:name=".course04.Part02Activity" />
         <activity android:name=".course04.part01.UnderstandingLayoutInflationActivity" />
         <activity android:name=".course04.part01.IntentActivity" />
+        <activity android:name=".course04.part01.ExplicitIntentMainActivity" />
+        <activity android:name=".course04.part01.ExplicitIntentNewActivity" />
+        <activity android:name=".course04.part01.ToastMainActivity" />
+        <activity android:name=".course04.part01.ToastNewActivity" />
 
         <!-- course 05 -->
         <activity android:name=".course05.Part01Activity" />
