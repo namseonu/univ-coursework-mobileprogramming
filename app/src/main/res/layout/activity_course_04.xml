@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,7 +11,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/mobile_programming"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/course_04_title_tv"
+        app:layout_constraintBottom_toTopOf="@id/course_04_title_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,21 +26,37 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/course_04_subtitle_tv" />
+        app:layout_constraintTop_toBottomOf="@id/course_04_subtitle_tv" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/course_04_recycler_view"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/course_04_01_btn"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="50dp"
-        android:orientation="vertical"
-        android:overScrollMode="never"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/course_04_title_tv"
-        tools:listitem="@layout/item_course_content" />
+        android:background="@drawable/bg_course_btn"
+        android:padding="10dp"
+        android:text="@string/course_04_01"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/course_04_02_btn"
+        app:layout_constraintStart_toStartOf="@id/course_04_title_tv"
+        app:layout_constraintTop_toBottomOf="@id/course_04_title_tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/course_04_02_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_course_btn"
+        android:padding="10dp"
+        android:text="@string/course_04_02"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/course_04_title_tv"
+        app:layout_constraintTop_toBottomOf="@id/course_04_01_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

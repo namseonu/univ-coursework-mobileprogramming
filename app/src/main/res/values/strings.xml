@@ -8,6 +8,8 @@
     <string name="course_02">02. Android Making First App</string>
     <string name="course_03">03. Views and Layouts</string>
     <string name="course_04">04. Application Basics</string>
+    <string name="course_04_01">04–1. Application Basics (Intent)</string>
+    <string name="course_04_02">04–2. Application Basics</string>
     <string name="course_05">05. Widgets and Event</string>
     <string name="course_05_01">05–1. Basic</string>
     <string name="course_05_02">05–2. Advanced</string>

@@ -2,26 +2,14 @@ package com.example.mobileprogramming;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.AppCompatButton;
 
-import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
-import com.example.mobileprogramming.course03.FrameLayoutExampleActivity;
-import com.example.mobileprogramming.course03.LinearLayoutExample1bActivity;
-import com.example.mobileprogramming.course03.LinearLayoutExample1cActivity;
-import com.example.mobileprogramming.course03.LinearLayoutExample2aActivity;
-import com.example.mobileprogramming.course03.LinearLayoutGravityActivity;
-import com.example.mobileprogramming.course03.LinearLayoutWeightActivity;
-import com.example.mobileprogramming.course03.RelativeLayoutExampleActivity;
-import com.example.mobileprogramming.course03.ScrollViewExample1Activity;
-import com.example.mobileprogramming.course03.ScrollViewExample2Activity;
-import com.example.mobileprogramming.course03.TableLayoutExample1Activity;
-import com.example.mobileprogramming.course03.TableLayoutExample2Activity;
-import com.example.mobileprogramming.course03.TableLayoutExample3Activity;
+import com.example.mobileprogramming.course04.Part01Activity;
+import com.example.mobileprogramming.course04.Part02Activity;
 
 import java.util.ArrayList;
 
@@ -34,20 +22,32 @@ public class Course04Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_04);
 
-        initCourseContentList();
-        initRecyclerView();
+        initClickListener();
     }
 
-    private void initCourseContentList() {
-    }
+    private void initClickListener() {
+        AppCompatButton part01 = (AppCompatButton) findViewById(R.id.course_04_01_btn);
+        AppCompatButton part02 = (AppCompatButton) findViewById(R.id.course_04_02_btn);
 
-    private void initRecyclerView() {
-        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.course_04_recycler_view);
-        CourseRecyclerViewAdapter mRecyclerViewAdpater = new CourseRecyclerViewAdapter();
-        mRecyclerViewAdpater.setCourseContentList(courseContentList);
+        // 04-1. Intent (Implicit Intent & Explicit Intent)
+        part01.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Part01Activity.class);
+                startActivity(intent);
+            }
+        });
 
-        mRecyclerView.setAdapter(mRecyclerViewAdpater);
+        // 04-2. Activity Life Cycle, Intent and Bundle, Service
+        part02.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Part02Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

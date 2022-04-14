@@ -45,6 +45,10 @@
         <activity android:name=".course03.ScrollViewExample2Activity" />
 
         <!-- course 04 -->
+        <activity android:name=".course04.Part01Activity" />
+        <activity android:name=".course04.Part02Activity" />
+        <activity android:name=".course04.part01.UnderstandingLayoutInflationActivity" />
+        <activity android:name=".course04.part01.IntentActivity" />
 
         <!-- course 05 -->
         <activity android:name=".course05.Part01Activity" />
