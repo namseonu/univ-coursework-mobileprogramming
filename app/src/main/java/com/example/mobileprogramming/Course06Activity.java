@@ -1,12 +1,18 @@
 package com.example.mobileprogramming;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
+import com.example.mobileprogramming.course03.LinearLayoutExample1bActivity;
+import com.example.mobileprogramming.course06.CustomViewCircleActivity;
+import com.example.mobileprogramming.course06.CustomViewRectangleActivity;
 
 import java.util.ArrayList;
 
@@ -24,6 +30,8 @@ public class Course06Activity extends AppCompatActivity {
     }
 
     private void initCourseContentList() {
+        courseContentList.add("Custom View - Circle");
+        courseContentList.add("Custom View - Rectangle");
     }
 
     private void initRecyclerView() {
@@ -31,6 +39,28 @@ public class Course06Activity extends AppCompatActivity {
         CourseRecyclerViewAdapter mRecyclerViewAdpater = new CourseRecyclerViewAdapter();
         mRecyclerViewAdpater.setCourseContentList(courseContentList);
 
+        // initialize click listener
+        mRecyclerViewAdpater.setOnItemClickListener(new CourseRecyclerViewAdapter.onItemClickListener() {
+            @Override
+            public void onItemClick(View itemView, int itemPosition) {
+                Intent intent = null;
+
+                switch (itemPosition) {
+                    case 0: // Custom View - Circle
+                        intent = new Intent(itemView.getContext(), CustomViewCircleActivity.class);
+                        break;
+                    case 1: // Custom View - Rectangle
+                        intent = new Intent(itemView.getContext(), CustomViewRectangleActivity.class);
+                        break;
+                    default:
+                        Log.d(tag, "switch/default");
+                        break;
+                }
+
+                // 액티비티 전환
+                if (intent != null) startActivity(intent);
+            }
+        });
 
         mRecyclerView.setAdapter(mRecyclerViewAdpater);
     }

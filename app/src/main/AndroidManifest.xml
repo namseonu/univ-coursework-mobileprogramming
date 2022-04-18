@@ -61,6 +61,8 @@
         <activity android:name=".course05.part02.Fragment02Activity" />
 
         <!-- course 06 -->
+        <activity android:name=".course06.CustomViewCircleActivity" />
+        <activity android:name=".course06.CustomViewRectangleActivity" />
 
     </application>
 
