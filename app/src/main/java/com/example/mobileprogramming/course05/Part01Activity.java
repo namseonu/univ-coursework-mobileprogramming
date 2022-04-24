@@ -11,6 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobileprogramming.R;
 import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
+import com.example.mobileprogramming.course05.part01.CheckBoxActivity;
+import com.example.mobileprogramming.course05.part01.EditTextActivity;
+import com.example.mobileprogramming.course05.part01.EventListenerActivity;
+import com.example.mobileprogramming.course05.part01.MenuActivity;
+import com.example.mobileprogramming.course05.part01.RadioButtonActivity;
 
 import java.util.ArrayList;
 
@@ -28,6 +33,11 @@ public class Part01Activity extends AppCompatActivity {
     }
 
     private void initCourseContentList() {
+        courseContentList.add("Event Listener");
+        courseContentList.add("EditText");
+        courseContentList.add("CheckBox");
+        courseContentList.add("RadioButton");
+        courseContentList.add("Menu - Handling click events");
     }
 
     private void initRecyclerView() {
@@ -42,8 +52,20 @@ public class Part01Activity extends AppCompatActivity {
                 Intent intent = null;
 
                 switch (itemPosition) {
-                    case 0: // LinearLayout - Example 1b
-//                        intent = new Intent(itemView.getContext(), .class);
+                    case 0: // Event Listener
+                        intent = new Intent(itemView.getContext(), EventListenerActivity.class);
+                        break;
+                    case 1: // EditText
+                        intent = new Intent(itemView.getContext(), EditTextActivity.class);
+                        break;
+                    case 2: // CheckBox
+                        intent = new Intent(itemView.getContext(), CheckBoxActivity.class);
+                        break;
+                    case 3: // RadioButton
+                        intent = new Intent(itemView.getContext(), RadioButtonActivity.class);
+                        break;
+                    case 4: // Menu - Handling click events
+                        intent = new Intent(itemView.getContext(), MenuActivity.class);
                         break;
                     default:
                         Log.d(tag, "switch/default");

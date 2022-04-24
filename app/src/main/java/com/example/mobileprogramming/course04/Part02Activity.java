@@ -46,10 +46,10 @@ public class Part02Activity extends AppCompatActivity {
                 Intent intent = null;
 
                 switch (itemPosition) {
-                    case 0:
+                    case 0: // The Life Cycle of an Activity
                         intent = new Intent(itemView.getContext(), LifeCycleActivity.class);
                         break;
-                    case 1:
+                    case 1: // Service
                         intent = new Intent(itemView.getContext(), MyServiceActivity.class);
                         break;
                     default:

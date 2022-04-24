@@ -49,7 +49,7 @@ public class Part02Activity extends AppCompatActivity {
                     case 0: // Fragment - Exercise (page 6)
                         intent = new Intent(itemView.getContext(), Fragment01Activity.class);
                         break;
-                    case 1:
+                    case 1: // Fragment - Exericse (page 13)
                         intent = new Intent(itemView.getContext(), Fragment02Activity.class);
                         break;
                     default:

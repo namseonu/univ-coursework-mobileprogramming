@@ -62,6 +62,11 @@
         <!-- course 05 -->
         <activity android:name=".course05.Part01Activity" />
         <activity android:name=".course05.Part02Activity" />
+        <activity android:name=".course05.part01.EventListenerActivity" />
+        <activity android:name=".course05.part01.EditTextActivity" />
+        <activity android:name=".course05.part01.CheckBoxActivity" />
+        <activity android:name=".course05.part01.RadioButtonActivity" />
+        <activity android:name=".course05.part01.MenuActivity" />
         <activity android:name=".course05.part02.Fragment01Activity" />
         <activity android:name=".course05.part02.Fragment02Activity" />
 
