@@ -13,6 +13,10 @@ import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
 import com.example.mobileprogramming.course03.LinearLayoutExample1bActivity;
 import com.example.mobileprogramming.course06.CustomViewCircleActivity;
 import com.example.mobileprogramming.course06.CustomViewRectangleActivity;
+import com.example.mobileprogramming.course06.MakingCustomViewActivity;
+import com.example.mobileprogramming.course06.PaintStrokeCapAndJoinActivity;
+import com.example.mobileprogramming.course06.PaintStyleActivity;
+import com.example.mobileprogramming.course06.PathActivity;
 
 import java.util.ArrayList;
 
@@ -32,6 +36,10 @@ public class Course06Activity extends AppCompatActivity {
     private void initCourseContentList() {
         courseContentList.add("Custom View - Circle");
         courseContentList.add("Custom View - Rectangle");
+        courseContentList.add("Paint - Style");
+        courseContentList.add("Paint - StrokeCap and StrokeJoin");
+        courseContentList.add("Path");
+        courseContentList.add("Making a Custom View");
     }
 
     private void initRecyclerView() {
@@ -51,6 +59,18 @@ public class Course06Activity extends AppCompatActivity {
                         break;
                     case 1: // Custom View - Rectangle
                         intent = new Intent(itemView.getContext(), CustomViewRectangleActivity.class);
+                        break;
+                    case 2: // Paint - Style
+                        intent = new Intent(itemView.getContext(), PaintStyleActivity.class);
+                        break;
+                    case 3: // Paint - StrokeCap and StrokeJoin
+                        intent = new Intent(itemView.getContext(), PaintStrokeCapAndJoinActivity.class);
+                        break;
+                    case 4: // Path
+                        intent = new Intent(itemView.getContext(), PathActivity.class);
+                        break;
+                    case 5: // Making a custom view
+                        intent = new Intent(itemView.getContext(), MakingCustomViewActivity.class);
                         break;
                     default:
                         Log.d(tag, "switch/default");

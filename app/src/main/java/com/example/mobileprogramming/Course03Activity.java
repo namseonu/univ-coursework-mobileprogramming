@@ -33,6 +33,7 @@ public class Course03Activity extends AppCompatActivity {
         courseContentList.add("LinearLayout - Example 2a (Fill Mode)");
         courseContentList.add("LinearLayout - Weight");
         courseContentList.add("LinearLayout - Gravity");
+        courseContentList.add("LinearLayout - Padding and Margin");
         courseContentList.add("RelativeLayout - Example");
         courseContentList.add("FrameLayout - Example");
         courseContentList.add("TableLayout - Example 1");
@@ -69,25 +70,28 @@ public class Course03Activity extends AppCompatActivity {
                     case 4: // LinearLayout - Gravity
                         intent = new Intent(itemView.getContext(), LinearLayoutGravityActivity.class);
                         break;
-                    case 5: // RelativeLayout - Example
+                    case 5: // LinearLayout - Padding and Margin
+                        intent = new Intent(itemView.getContext(), LinearLayoutPaddingMarginActivity.class);
+                        break;
+                    case 6: // RelativeLayout - Example
                         intent = new Intent(itemView.getContext(), RelativeLayoutExampleActivity.class);
                         break;
-                    case 6: // FrameLayout - Example
+                    case 7: // FrameLayout - Example
                         intent = new Intent(itemView.getContext(), FrameLayoutExampleActivity.class);
                         break;
-                    case 7: // TableLayout - Example 1
+                    case 8: // TableLayout - Example 1
                         intent = new Intent(itemView.getContext(), TableLayoutExample1Activity.class);
                         break;
-                    case 8: // TableLayout - Example 2
+                    case 9: // TableLayout - Example 2
                         intent = new Intent(itemView.getContext(), TableLayoutExample2Activity.class);
                         break;
-                    case 9:    // TableLayout - Example 3
+                    case 10:    // TableLayout - Example 3
                         intent = new Intent(itemView.getContext(), TableLayoutExample3Activity.class);
                         break;
-                    case 10:    // ScrollView - Example 1
+                    case 11:    // ScrollView - Example 1
                         intent = new Intent(itemView.getContext(), ScrollViewExample1Activity.class);
                         break;
-                    case 11:    // ScrollView - Example 2
+                    case 12:    // ScrollView - Example 2
                         intent = new Intent(itemView.getContext(), ScrollViewExample2Activity.class);
                         break;
                     default:

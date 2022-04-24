@@ -36,6 +36,7 @@
         <activity android:name=".course03.LinearLayoutExample2aActivity" />
         <activity android:name=".course03.LinearLayoutWeightActivity" />
         <activity android:name=".course03.LinearLayoutGravityActivity" />
+        <activity android:name=".course03.LinearLayoutPaddingMarginActivity" />
         <activity android:name=".course03.RelativeLayoutExampleActivity" />
         <activity android:name=".course03.FrameLayoutExampleActivity" />
         <activity android:name=".course03.TableLayoutExample1Activity" />
@@ -63,6 +64,10 @@
         <!-- course 06 -->
         <activity android:name=".course06.CustomViewCircleActivity" />
         <activity android:name=".course06.CustomViewRectangleActivity" />
+        <activity android:name=".course06.PaintStyleActivity" />
+        <activity android:name=".course06.PaintStrokeCapAndJoinActivity" />
+        <activity android:name=".course06.PathActivity" />
+        <activity android:name=".course06.MakingCustomViewActivity" />
 
     </application>
 
