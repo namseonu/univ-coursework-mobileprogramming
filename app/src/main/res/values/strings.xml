@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">202035328 남선우</string>
     <string name="mobile_programming">Mobile Progamming</string>
-    <string name="hello_android">안녕 안드로이드!</string>
 
     <!-- course -->
     <string name="course_01">01. Introduction</string>
@@ -14,4 +13,14 @@
     <string name="course_05_01">05–1. Basic</string>
     <string name="course_05_02">05–2. Advanced</string>
     <string name="course_06">06. Graphics and Animation</string>
+
+    <!-- for exercise -->
+    <string name="hello_android">안녕 안드로이드!</string>
+    <string name="ACME_Corp_Caption">login</string>
+    <string name="Enter_your_First_and_Last_name">Enter your First and Last name</string>
+    <string name="login">login</string>
+    <string name="sugar">Sugar</string>
+    <string name="cream">Cream</string>
+    <string name="coffee_addons">What else in your coffee?</string>
+    <string name="pay">Pay</string>
 </resources>
