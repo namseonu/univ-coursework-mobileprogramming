@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+        <service android:name=".course04.part02.MyService" />
+
         <!-- course list -->
         <activity android:name=".Course01Activity" />
         <activity android:name=".Course02Activity" />
@@ -54,6 +56,8 @@
         <activity android:name=".course04.part01.ExplicitIntentNewActivity" />
         <activity android:name=".course04.part01.ToastMainActivity" />
         <activity android:name=".course04.part01.ToastNewActivity" />
+        <activity android:name=".course04.part02.LifeCycleActivity" />
+        <activity android:name=".course04.part02.MyServiceActivity" />
 
         <!-- course 05 -->
         <activity android:name=".course05.Part01Activity" />

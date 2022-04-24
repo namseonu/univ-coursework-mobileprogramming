@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobileprogramming.R;
 import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
-import com.example.mobileprogramming.course04.part01.IntentActivity;
-import com.example.mobileprogramming.course04.part01.UnderstandingLayoutInflationActivity;
+import com.example.mobileprogramming.course04.part02.LifeCycleActivity;
+import com.example.mobileprogramming.course04.part02.MyServiceActivity;
 
 import java.util.ArrayList;
 
@@ -30,7 +30,8 @@ public class Part02Activity extends AppCompatActivity {
     }
 
     private void initCourseContentList() {
-
+        courseContentList.add("The Life Cycle of an Activity");
+        courseContentList.add("Service");
     }
 
     private void initRecyclerView() {
@@ -46,7 +47,10 @@ public class Part02Activity extends AppCompatActivity {
 
                 switch (itemPosition) {
                     case 0:
-//                        intent = new Intent(itemView.getContext(), UnderstandingLayoutInflationActivity.class);
+                        intent = new Intent(itemView.getContext(), LifeCycleActivity.class);
+                        break;
+                    case 1:
+                        intent = new Intent(itemView.getContext(), MyServiceActivity.class);
                         break;
                     default:
                         Log.d(tag, "switch/default");

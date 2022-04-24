@@ -61,7 +61,7 @@ public class CourseRecyclerViewAdapter extends RecyclerView.Adapter<CourseRecycl
                 @Override
                 public void onClick(View view) {
                     int position = getAbsoluteAdapterPosition();
-                    Log.d("ADAPTER/COURSE02", "ViewHolder/onClick");
+                    Log.d("ADAPTER", "ViewHolder/onClick");
                     if(position != RecyclerView.NO_POSITION) {
                         mItemClickListener.onItemClick(view, position);
                     }
