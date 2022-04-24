@@ -29,6 +29,11 @@ public class UnderstandingLayoutInflationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+                // attachToRoot
+                // --> true: child view를 parent view에 지금 즉시 붙이겠다.
+                // --> false: chlid view를 parent view에 지금 붙이지 않고, addView 등을 이용해 붙이겠다.
+                // 이때, fragment의 경우 true 값을 줘버리면 이후 트랜잭션 수행 시 IllegalStateException이 발생할 수 있으므로 false로 해야 한다.
                 inflater.inflate(R.layout.layout_sub_1, container, true);
 
                 CheckBox checkBox = (CheckBox) container.findViewById(R.id.checkBox);
