@@ -7,14 +7,17 @@
     android:orientation="vertical">
 
     <TableRow>
-        <TextView android:text="ISBN:" />
+        <TextView
+            android:text="ISBN:" />
 
+        <!-- occupy 3 columns -->
         <EditText
             android:id="@+id/ediISBN"
             android:layout_span="3" />
     </TableRow>
 
     <TableRow>
+        <!-- skip columns 0, 1 -->
         <Button
             android:id="@+id/cancel"
             android:layout_column="2"

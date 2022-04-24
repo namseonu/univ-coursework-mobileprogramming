@@ -3,6 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:stretchColumns="*">
+
     <!-- stretchColumns: 늘릴 수 있는 열들의 번호 지정 (0, 1, 2, ..., *) -->
+
+    <TableRow>
+        <TextView
+            android:text="Open..."
+            android:padding="3dip" />
+
+        <TextView
+            android:text="Ctrl-O"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Save As..."
+            android:padding="3dip" />
+
+        <TextView
+            android:text="Ctrl-Shift-S"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
 
 </TableLayout>
