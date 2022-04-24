@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mobileprogramming">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -69,6 +72,11 @@
         <activity android:name=".course05.part01.MenuActivity" />
         <activity android:name=".course05.part02.Fragment01Activity" />
         <activity android:name=".course05.part02.Fragment02Activity" />
+        <activity android:name=".course05.part02.Fragment03Activity" />
+        <activity android:name=".course05.part02.WebView01Activity" />
+        <activity android:name=".course05.part02.WebView02Activity" />
+        <activity android:name=".course05.part02.ListViewActivity" />
+        <activity android:name=".course05.part02.SpinnerActivity" />
 
         <!-- course 06 -->
         <activity android:name=".course06.CustomViewCircleActivity" />
