@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mobileprogramming.R;
 
-public class ExplicitIntentMainActivity extends AppCompatActivity {
+public class  ExplicitIntentMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
