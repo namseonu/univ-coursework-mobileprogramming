@@ -13,10 +13,13 @@ import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
 import com.example.mobileprogramming.course03.LinearLayoutExample1bActivity;
 import com.example.mobileprogramming.course06.CustomViewCircleActivity;
 import com.example.mobileprogramming.course06.CustomViewRectangleActivity;
+import com.example.mobileprogramming.course06.LayerListActivity;
 import com.example.mobileprogramming.course06.MakingCustomViewActivity;
 import com.example.mobileprogramming.course06.PaintStrokeCapAndJoinActivity;
 import com.example.mobileprogramming.course06.PaintStyleActivity;
 import com.example.mobileprogramming.course06.PathActivity;
+import com.example.mobileprogramming.course06.StateListActivity;
+import com.example.mobileprogramming.course06.TransitionDrawableActivity;
 
 import java.util.ArrayList;
 
@@ -40,6 +43,9 @@ public class Course06Activity extends AppCompatActivity {
         courseContentList.add("Paint - StrokeCap and StrokeJoin");
         courseContentList.add("Path");
         courseContentList.add("Making a Custom View");
+        courseContentList.add("Layer List");
+        courseContentList.add("Transition Drawable");
+        courseContentList.add("State List");
     }
 
     private void initRecyclerView() {
@@ -71,6 +77,15 @@ public class Course06Activity extends AppCompatActivity {
                         break;
                     case 5: // Making a custom view
                         intent = new Intent(itemView.getContext(), MakingCustomViewActivity.class);
+                        break;
+                    case 6: // Layer List
+                        intent = new Intent(itemView.getContext(), LayerListActivity.class);
+                        break;
+                    case 7: // Transition Drawable
+                        intent = new Intent(itemView.getContext(), TransitionDrawableActivity.class);
+                        break;
+                    case 8: // State List
+                        intent = new Intent(itemView.getContext(), StateListActivity.class);
                         break;
                     default:
                         Log.d(tag, "switch/default");

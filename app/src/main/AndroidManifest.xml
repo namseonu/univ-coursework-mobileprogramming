@@ -85,6 +85,9 @@
         <activity android:name=".course06.PaintStrokeCapAndJoinActivity" />
         <activity android:name=".course06.PathActivity" />
         <activity android:name=".course06.MakingCustomViewActivity" />
+        <activity android:name=".course06.LayerListActivity" />
+        <activity android:name=".course06.TransitionDrawableActivity" />
+        <activity android:name=".course06.StateListActivity" />
 
     </application>
 
