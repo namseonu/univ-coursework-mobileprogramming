@@ -31,6 +31,7 @@
         <activity android:name=".Course04Activity" />
         <activity android:name=".Course05Activity" />
         <activity android:name=".Course06Activity" />
+        <activity android:name=".Course08Activity" />
 
         <!-- course 02 -->
         <activity android:name=".course02.UnderstandingFirstAppActivity" />
@@ -85,9 +86,26 @@
         <activity android:name=".course06.PaintStrokeCapAndJoinActivity" />
         <activity android:name=".course06.PathActivity" />
         <activity android:name=".course06.MakingCustomViewActivity" />
+        <activity android:name=".course06.DrawableExampleActivity" />
         <activity android:name=".course06.LayerListActivity" />
         <activity android:name=".course06.TransitionDrawableActivity" />
         <activity android:name=".course06.StateListActivity" />
+        <activity android:name=".course06.DrawingBitmapOnCanvas1Activity" />
+        <activity android:name=".course06.DrawingBitmapOnCanvas2Activity" />
+        <activity android:name=".course06.CanvasWithBitmapActivity" />
+        <activity android:name=".course06.AnimationTranslate1Activity" />
+        <activity android:name=".course06.AnimationTranslate2Activity" />
+        <activity android:name=".course06.AnimationScaleActivity" />
+        <activity android:name=".course06.AnimationRotateActivity" />
+        <activity android:name=".course06.AnimationTransparentActivity" />
+
+        <!-- course 08 -->
+        <activity android:name=".course08.Part01Activity" />
+        <activity android:name=".course08.Part02Activity" />
+        <activity android:name=".course08.Part03Activity" />
+        <activity android:name=".course08.part01.SharedPreferencesActivity" />
+        <activity android:name=".course08.part01.InternalStorageActivity" />
+        <activity android:name=".course08.part02.SQLiteActivity" />
 
     </application>
 

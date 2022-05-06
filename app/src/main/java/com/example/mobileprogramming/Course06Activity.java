@@ -10,9 +10,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
-import com.example.mobileprogramming.course03.LinearLayoutExample1bActivity;
+import com.example.mobileprogramming.course06.AnimationRotateActivity;
+import com.example.mobileprogramming.course06.AnimationScaleActivity;
+import com.example.mobileprogramming.course06.AnimationTranslate1Activity;
+import com.example.mobileprogramming.course06.AnimationTranslate2Activity;
+import com.example.mobileprogramming.course06.AnimationTransparentActivity;
+import com.example.mobileprogramming.course06.CanvasWithBitmapActivity;
 import com.example.mobileprogramming.course06.CustomViewCircleActivity;
 import com.example.mobileprogramming.course06.CustomViewRectangleActivity;
+import com.example.mobileprogramming.course06.DrawableExampleActivity;
+import com.example.mobileprogramming.course06.DrawingBitmapOnCanvas1Activity;
+import com.example.mobileprogramming.course06.DrawingBitmapOnCanvas2Activity;
 import com.example.mobileprogramming.course06.LayerListActivity;
 import com.example.mobileprogramming.course06.MakingCustomViewActivity;
 import com.example.mobileprogramming.course06.PaintStrokeCapAndJoinActivity;
@@ -43,9 +51,18 @@ public class Course06Activity extends AppCompatActivity {
         courseContentList.add("Paint - StrokeCap and StrokeJoin");
         courseContentList.add("Path");
         courseContentList.add("Making a Custom View");
+        courseContentList.add("Drawable Example");
         courseContentList.add("Layer List");
         courseContentList.add("Transition Drawable");
         courseContentList.add("State List");
+        courseContentList.add("Drawing Bitmap on Canvas 1");
+        courseContentList.add("Drawing Bitmap on Canvas 2");
+        courseContentList.add("Canvas with Bitmap");
+        courseContentList.add("Animation - Translate 1");
+        courseContentList.add("Animation - Translate 2");
+        courseContentList.add("Animation - Scale");
+        courseContentList.add("Animation - Rotate");
+        courseContentList.add("Animation - Transparent");
     }
 
     private void initRecyclerView() {
@@ -78,14 +95,41 @@ public class Course06Activity extends AppCompatActivity {
                     case 5: // Making a custom view
                         intent = new Intent(itemView.getContext(), MakingCustomViewActivity.class);
                         break;
-                    case 6: // Layer List
+                    case 6: // Drawable Example
+                        intent = new Intent(itemView.getContext(), DrawableExampleActivity.class);
+                        break;
+                    case 7: // Layer List
                         intent = new Intent(itemView.getContext(), LayerListActivity.class);
                         break;
-                    case 7: // Transition Drawable
+                    case 8: // Transition Drawable
                         intent = new Intent(itemView.getContext(), TransitionDrawableActivity.class);
                         break;
-                    case 8: // State List
+                    case 9: // State List
                         intent = new Intent(itemView.getContext(), StateListActivity.class);
+                        break;
+                    case 10: // Drawing Bitmap on Canvas 1
+                        intent = new Intent(itemView.getContext(), DrawingBitmapOnCanvas1Activity.class);
+                        break;
+                    case 11: // Drawing Bitmap on Canvas 2
+                        intent = new Intent(itemView.getContext(), DrawingBitmapOnCanvas2Activity.class);
+                        break;
+                    case 12: // Canvas with Bitmap
+                        intent = new Intent(itemView.getContext(), CanvasWithBitmapActivity.class);
+                        break;
+                    case 13: // Animation - Translate 1
+                        intent = new Intent(itemView.getContext(), AnimationTranslate1Activity.class);
+                        break;
+                    case 14: // Animation - Translate 2
+                        intent = new Intent(itemView.getContext(), AnimationTranslate2Activity.class);
+                        break;
+                    case 15: // Animation - Scale
+                        intent = new Intent(itemView.getContext(), AnimationScaleActivity.class);
+                        break;
+                    case 16: // Animation - Rotate
+                        intent = new Intent(itemView.getContext(), AnimationRotateActivity.class);
+                        break;
+                    case 17: // Animation - Transparent
+                        intent = new Intent(itemView.getContext(), AnimationTransparentActivity.class);
                         break;
                     default:
                         Log.d(tag, "switch/default");
