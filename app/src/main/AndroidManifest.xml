@@ -31,6 +31,7 @@
         <activity android:name=".Course04Activity" />
         <activity android:name=".Course05Activity" />
         <activity android:name=".Course06Activity" />
+        <activity android:name=".Course07Activity" />
         <activity android:name=".Course08Activity" />
 
         <!-- course 02 -->
@@ -98,6 +99,12 @@
         <activity android:name=".course06.AnimationScaleActivity" />
         <activity android:name=".course06.AnimationRotateActivity" />
         <activity android:name=".course06.AnimationTransparentActivity" />
+
+        <!-- course 07 -->
+        <activity android:name=".course07.UsingThreadActivity" />
+        <activity android:name=".course07.UsingHandlerMessageActivity" />
+        <activity android:name=".course07.UsingHandlerRunnableObjectActivity" />
+        <activity android:name=".course07.AsyncTaskDemoActivity" />
 
         <!-- course 08 -->
         <activity android:name=".course08.Part01Activity" />

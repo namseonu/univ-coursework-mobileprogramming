@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         courseList.add("04. Application Basics Lifecycle Activty Intents");
         courseList.add("05. Widgets & Event");
         courseList.add("06. Graphics & Animation");
+        courseList.add("07. Thread");
         courseList.add("08. Database");
     }
 
@@ -66,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(itemView.getContext(), Course06Activity.class);
                         break;
                     case 6:
+                        intent = new Intent(itemView.getContext(), Course07Activity.class);
+                        break;
+                    case 7:
                         intent = new Intent(itemView.getContext(), Course08Activity.class);
                         break;
                     default:

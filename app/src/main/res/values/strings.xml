@@ -13,6 +13,7 @@
     <string name="course_05_01">05–1. Basic</string>
     <string name="course_05_02">05–2. Advanced</string>
     <string name="course_06">06. Graphics and Animation</string>
+    <string name="course_07">07. Thread</string>
     <string name="course_08">08. Database</string>
     <string name="course_08_01">08–1. Data Persistency</string>
     <string name="course_08_02">08–2. SQLite (Database)</string>
