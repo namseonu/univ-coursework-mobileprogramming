@@ -18,6 +18,9 @@
     <string name="course_08_01">08–1. Data Persistency</string>
     <string name="course_08_02">08–2. SQLite (Database)</string>
     <string name="course_08_03">08–3. Data Networking</string>
+    <string name="course_09">09. Multimedia \n &amp; Location based Service</string>
+    <string name="course_09_01">09–1. Multimedia</string>
+    <string name="course_09_02">09–2. Location Service</string>
 
     <!-- for exercise -->
     <string name="hello_android">안녕 안드로이드!</string>

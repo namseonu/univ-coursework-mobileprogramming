@@ -3,6 +3,8 @@
     package="com.example.mobileprogramming">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:usesCleartextTraffic="true"
@@ -22,6 +24,7 @@
             </intent-filter>
         </activity>
 
+        <!-- service -->
         <service android:name=".course04.part02.MyService" />
 
         <!-- course list -->
@@ -33,6 +36,7 @@
         <activity android:name=".Course06Activity" />
         <activity android:name=".Course07Activity" />
         <activity android:name=".Course08Activity" />
+        <activity android:name=".Course09Activity" />
 
         <!-- course 02 -->
         <activity android:name=".course02.UnderstandingFirstAppActivity" />
@@ -113,6 +117,13 @@
         <activity android:name=".course08.part01.SharedPreferencesActivity" />
         <activity android:name=".course08.part01.InternalStorageActivity" />
         <activity android:name=".course08.part02.SQLiteActivity" />
+
+        <!-- course 09 -->
+        <activity android:name=".course09.Part01Activity" />
+        <activity android:name=".course09.Part02Activity" />
+        <activity android:name=".course09.part01.AudioPlayerActivity" />
+        <activity android:name=".course09.part01.VideoPlayerActivity" />
+        <activity android:name=".course09.part02.LocationBasedServiceActivity" />
 
     </application>
 

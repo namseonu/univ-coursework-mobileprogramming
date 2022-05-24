@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         courseList.add("06. Graphics & Animation");
         courseList.add("07. Thread");
         courseList.add("08. Database");
+        courseList.add("09. Multimedia & Location based Service");
     }
 
     private void initRecyclerView() {
@@ -71,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 7:
                         intent = new Intent(itemView.getContext(), Course08Activity.class);
+                        break;
+                    case 8:
+                        intent = new Intent(itemView.getContext(), Course09Activity.class);
                         break;
                     default:
                         Log.d(tag, "switch/default");
