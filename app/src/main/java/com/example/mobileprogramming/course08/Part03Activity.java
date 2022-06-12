@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobileprogramming.R;
 import com.example.mobileprogramming.adapter.CourseRecyclerViewAdapter;
+import com.example.mobileprogramming.course08.part03.DataNetworkingActivity;
 
 import java.util.ArrayList;
 
@@ -29,6 +30,7 @@ public class Part03Activity extends AppCompatActivity {
     }
 
     private void initCourseContentList() {
+        courseContentList.add("Data Networking");
     }
 
     private void initRecyclerView() {
@@ -43,7 +45,9 @@ public class Part03Activity extends AppCompatActivity {
                 Intent intent = null;
 
                 switch (itemPosition) {
-
+                    case 0:
+                        intent = new Intent(itemView.getContext(), DataNetworkingActivity.class);
+                        break;
                     default:
                         Log.d(tag, "switch/default");
                         break;

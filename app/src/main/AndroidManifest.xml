@@ -118,6 +118,7 @@
         <activity android:name=".course08.part01.SharedPreferencesActivity" />
         <activity android:name=".course08.part01.InternalStorageActivity" />
         <activity android:name=".course08.part02.SQLiteActivity" />
+        <activity android:name=".course08.part03.DataNetworkingActivity" />
 
         <!-- course 09 -->
         <activity android:name=".course09.Part01Activity" />
