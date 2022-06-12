@@ -15,7 +15,7 @@ public class AsyncTaskDemoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_async_task_demo);
         tvCounter = (TextView) findViewById(R.id.tv_counter);
 
         new CountDownTask().execute();  // Starts the CountDownTask

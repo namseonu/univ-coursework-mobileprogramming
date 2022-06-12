@@ -37,6 +37,7 @@
         <activity android:name=".Course07Activity" />
         <activity android:name=".Course08Activity" />
         <activity android:name=".Course09Activity" />
+        <activity android:name=".Course10Activity" />
 
         <!-- course 02 -->
         <activity android:name=".course02.UnderstandingFirstAppActivity" />
@@ -124,6 +125,10 @@
         <activity android:name=".course09.part01.AudioPlayerActivity" />
         <activity android:name=".course09.part01.VideoPlayerActivity" />
         <activity android:name=".course09.part02.LocationBasedServiceActivity" />
+
+        <!-- course 10 -->
+        <activity android:name=".course10.GravitySensorActivity" />
+        <activity android:name=".course10.AllSensorsActivity" />
 
     </application>
 
